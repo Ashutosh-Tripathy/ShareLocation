@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:paddingRight="5dp"
+            android:src="@android:drawable/ic_search_category_default" />
+
+        <EditText
+            android:id="@+id/txtPlaceDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:hint="Search location here"
+            android:onClick="findPlace" />
+
+    </LinearLayout>
+    <!--Map fragment-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+        <!--<com.google.android.gms.maps.MapView-->
+        <!--android:id="@+id/map1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--</com.google.android.gms.maps.MapView>-->
+        <!--<fragment-->
+        <!--android:id="@+id/map_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></fragment>-->
+        <!--<com.google.android.gms.maps.MapView-->
+        <!-- -->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+        <!-- -->
+        <!--</com.google.android.gms.maps.MapView>-->
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map_container"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/layoutHeader"
+            tools:context="com.example.tripathy.sharelocation.MapActivity" />
+    </LinearLayout>
+    <!--/Map fragment        -->
+
+
+    <!--Search and Share text area-->
+
+    <!--android:layout_above="@+id/layoutFooter"-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="2.5"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="7">-->
+    <!--&lt;!&ndash;android:layout_below="@id/map"&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/lblSearch"-->
+    <!--style="@style/label_info"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignBottom="@+id/lblSearch"-->
+    <!--android:layout_weight="2"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/lbl_Search_Text" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/txtSearch"-->
+    <!--style="@style/text_default"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_weight="5"-->
+    <!--android:hint="Search location"-->
+    <!--android:imeOptions="actionSearch"-->
+    <!--android:inputType="textCapWords"-->
+    <!--android:maxLength="50"-->
+    <!--android:singleLine="true" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/layoutSearch"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/lblMessage"
+            style="@style/label_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/lblMessage"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/lbl_Message_Text" />
+
+        <EditText
+            android:id="@+id/txtMessage"
+            style="@style/text_default"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="eg: My office location"
+            android:imeOptions="actionSend"
+            android:inputType="textCapSentences"
+            android:maxLength="50"
+            android:singleLine="true" />
+
+    </LinearLayout>
+</LinearLayout><!--/Search and Share text area-->

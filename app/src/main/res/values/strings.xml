@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HappyShare</string>
+    <string name="btn_Shared_Text">Shared</string>
+    <string name="btn_Home_Text">Home</string>
+    <string name="btn_Received_Text">Received</string>
+    <string name="btn_Share_Text">Share</string>
+    <string name="btn_Search_Text">Search</string>
+    <string name="lbl_Search_Text">Search: </string>
+    <string name="lbl_Message_Text">Message: </string>
+    <!--<string name="api_Url">http://127.0.0.1:443/</string>-->
+    <string name="api_Url">http://happyshare.asia:443/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">HappyShare</string>
+    <string name="google_api_url">http://maps.googleapis.com/maps/api/geocode/json?sensor=true&amp;address=</string>
+    <string name="button_home_text">Home</string>
+    <string name="button_search_text">Search</string>
+    <string name="button_view_text">View</string>
+    <string name="button_share_text">Share</string>
+    <string name="google_maps_key">AIzaSyAW9ht4pJdvpaN4YVZvfkk-BTVREVHv0pc</string>
+
+</resources>

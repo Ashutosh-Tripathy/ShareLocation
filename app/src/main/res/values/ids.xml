@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layoutMapParent" type="id">layoutMapParent</item>
+    <item name="layoutHeader" type="id">layoutHeader</item>
+    <item name="layoutFooter" type="id">layoutFooter</item>
+    <item name="fragmentContent" type="id">fragmentContent</item>
+    <item name="lblLocationId" type="id">lblLocationId</item>
+    <item name="lblSenderId" type="id"> lblSenderId</item>
+    <item name="lblReceiverId" type="id"> lblReceiverId</item>
+    <item name="lblMessage" type="id"> lblMessage</item>
+    <item name="lblCreatedTime" type="id"> lblCreatedTime</item>
+    <item name="lblLatitude" type="id">lblLatitude</item>
+    <item name="lblLongitude" type="id">lblLongitude</item>
+    <item name="lblStatus" type="id">lblStatus</item>
+    <item name="lblMobileNumber" type="id">lblMobileNumber</item>
+</resources>

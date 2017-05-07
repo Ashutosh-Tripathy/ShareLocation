@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnHome"
+            style="@style/btn_primary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/primarybutton"
+            android:onClick="onSelectFragment"
+            android:text="@string/button_home_text" />
+
+        <Button
+            android:id="@+id/btnShared"
+            style="@style/btn_primary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/primarybutton"
+            android:onClick="onSelectFragment"
+            android:text="Shared" />
+
+        <Button
+            android:id="@+id/btnReceived"
+            style="@style/btn_primary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/primarybutton"
+            android:onClick="onSelectFragment"
+            android:text="Received" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPlaceholder"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnView"
+            style="@style/btn_secondary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/secondarybutton"
+            android:onClick="onActionClick"
+            android:text="@string/button_view_text" />
+
+        <Button
+            android:id="@+id/btnShare"
+            style="@style/btn_secondary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/secondarybutton"
+            android:onClick="onActionClick"
+            android:text="@string/button_share_text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"></LinearLayout>
+</LinearLayout>
